@@ -1,0 +1,21 @@
+---
+title: Protocol
+description: ""
+---
+
+
+Gotchipus technical architecture is built on a robust stack of Ethereum Improvement Proposals (EIPs) and standards, ensuring modularity, autonomy, and scalability:
+
+### EIP-2535 (Diamond Standard)
+Unlike traditional monolithic contracts, Gotchipus uses a Diamond Proxy structure. Functions are split into “Facets” (e.g., CoreFacet, DeFiFacet), enabling independent upgrades without redeploying the entire contract. This modularity supports our evolving ecosystem, from NFT minting to future palm console integration, while optimizing gas costs via shared storage.
+
+### ERC-6551 (Tokenbound Accounts)
+Each Gotchipus is more than an NFT—it’s a self-contained wallet. ERC-6551 grants every token an address, allowing it to hold Uniswap LP Tokens, parts, and ETH, and execute on-chain actions autonomously. This transforms Gotchipus into a living entity capable of interacting with DeFi protocols.
+
+### ERC-4337 (Account Abstraction)
+To eliminate gas barriers, we implement ERC-4337, enabling gasless interactions. External agents (like AI or Keepers) can pay fees on behalf of users, making nurturing seamless—whether feeding your pet or battling MEV bots.
+
+### Chainlink VRF (Verifiable Randomness Function)
+Fairness is key. When hatching a Stellar Egg, Chainlink VRF generates random numbers to assign one of seven traits and a rarity level (Common to Mythic). This ensures transparency and unpredictability, enhancing collectible value.
+
+Deployed on Pharos, Gotchipus leverages its high throughput and low fees, aligning with our vision of an accessible, dynamic pet ecosystem. These protocols empower a scalable, future-proof platform ready for Web3 innovation.

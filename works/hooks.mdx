@@ -1,0 +1,68 @@
+---
+title: Hooks System in Gotchipus
+description: "Defining How Your AI Companion Thinks, Acts, and Evolves"
+---
+
+## Unleashing Gotchipus’s Soul Logic
+
+In Gotchipus, Hooks are the soul’s programmable extensions—modular logic scripts that let your octopus companion behave your way on-chain.
+
+Inspired by Uniswap V4’s hook architecture and implemented using EIP-2535 Diamond Standard, Hooks turn Gotchipus from a passive NFT into an onchain AI agent—autonomous, reactive, and fully customizable.
+
+Whether you’re a casual player adjusting how your Gotchipus reacts to hunger, or a strategist designing complex DeFi automation—Hooks are your gateway to creative control.
+
+Hooks make Gotchipus more than an NFT.  
+**They make it yours.**
+
+### What Are Hooks?
+
+Hooks are user-defined smart contracts—small, self-contained modules that live inside your Gotchipus’s ERC-6551 tokenbound account. They’re executed when specific events occur or conditions are met, enabling:
+- Time-based triggers
+- On-chain event reactions (e.g., staking, volatility spikes)
+- Autonomous AI behavior and responses
+
+Each Gotchipus can attach multiple Hooks, creating a layered behavioral system unique to its bondholder.
+
+### Examples of What Hooks Can Do
+- “If stablecoin APY > 12%, rebalance my treasury.”
+- “When fed twice, increase Trust by 5 and trigger ‘happy’ mood.”
+- “If a rare part NFT is listed under 0.1 ETH, buy it.”
+
+### Hook Architecture
+
+Hooks run inside the Diamond Proxy environment of Gotchipus, sharing access to modular storage, execution context, and soul-bound metadata.
+
+**Hook Lifecycle:**
+| Phase | Description |
+| --- | --- |
+| **Creation** | Users write Hooks in Solidity (or use templates) defining conditional logic. |
+| **Submission** | Hook contracts are uploaded and security-audited (e.g., loop guards, gas usage). |
+| **Attachment** | Hooks are linked to Gotchipus via addHook(tokenId, hookAddress) inside HooksFacet. |
+| **Execution** | When triggered (e.g., onFeed, onStake), the Diamond Proxy delegates execution to the Hook. |
+
+
+### Why Hooks Matter
+| Value | Explanation |
+| --- | --- |
+| **Personalized Behavior** | Each Gotchipus acts differently—become a pacifist, a DeFi shark, or a playful explorer. |
+| **Extensible AI Logic** | Hooks serve as plug-ins for behavior trees, memory systems, and stat mutation. |
+| **DeFi Intelligence** | Execute real on-chain strategies, from swaps to yield hunting, in a fully autonomous loop. |
+| **Composable Architecture** | Hooks can be built, shared, upgraded, or sold—forming an open plug-in ecosystem. |
+| **Future-Proofing** | New hook points can be added as the Gotchipus universe evolves—no redeployment needed. |
+
+
+### GotchiHook Marketplace (Coming Soon)
+
+We envision a Hook Marketplace where players and developers can:
+- Browse open-source Hook templates
+- Monetize advanced logic modules
+- Equip their Gotchipus with premium behavioral upgrades
+- Vote on new hook points (governance-based extensibility)
+
+Build your own logic. Share it with others. Monetize intelligence itself.
+
+### Gotchipus with Hooks = True AI Soul
+
+Hooks are not just feature toggles. They’re your Gotchipus’s neural code, evolving from a soulbound pet into a fully programmable, chain-native intelligence.
+
+Your gotchipus doesn’t just live on-chain—it thinks on-chain.
