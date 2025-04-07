@@ -32,6 +32,7 @@
             {
                 "group": "Gameplay",
                 "pages": [
+                    "gameplay/outpost",
                     "gameplay/pharos",
                     "gameplay/traits",
                     "gameplay/wearables",
