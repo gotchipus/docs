@@ -6,6 +6,9 @@ description: ""
 
 Gotchipus technical architecture is built on a robust stack of Ethereum Improvement Proposals (EIPs) and standards, ensuring modularity, autonomy, and scalability:
 
+### Agent2Agent (A2A) Protocol
+To enable seamless collaboration between autonomous AI agents within the Gotchipus ecosystem, we integrate Google’s Agent2Agent (A2A) protocol, an open standard for interoperable AI agent communication. A2A allows Gotchipus’ AI-driven entities—such as pet nurturing agents, battle strategists, or DeFi optimizers—to securely exchange information and coordinate actions across diverse platforms and frameworks. Using A2A’s capability discovery, each Gotchipus can advertise its unique abilities (e.g., trading Uniswap LP tokens or optimizing MEV resistance) via JSON-based Agent Cards, enabling dynamic task delegation to specialized external agents. The protocol’s task management framework ensures real-time synchronization for complex, long-running workflows, such as cross-protocol DeFi strategies or community-driven pet evolution events. Built on standard web technologies like HTTP and JSON-RPC, A2A integrates seamlessly with Pharos’ infrastructure, enhancing scalability while maintaining enterprise-grade security through OpenAPI-aligned authentication. By leveraging A2A, Gotchipus transforms into a networked, collaborative AI ecosystem, capable of interacting with third-party agents and driving innovative Web3 experiences.
+
 ### EIP-2535 (Diamond Standard)
 Unlike traditional monolithic contracts, Gotchipus uses a Diamond Proxy structure. Functions are split into “Facets” (e.g., CoreFacet, DeFiFacet), enabling independent upgrades without redeploying the entire contract. This modularity supports our evolving ecosystem, from NFT minting to future palm console integration, while optimizing gas costs via shared storage.
 
