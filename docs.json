@@ -45,8 +45,14 @@
                     "tokens/pharosnft",
                     "tokens/pus"
                 ]
+            },
+            {
+                "group": "Developer",
+                "pages": [
+                    "developer/smart-contracts"
+                ]
             }
-          ]
+        ]
     },
     "logo": {
       "light": "/images/icon.png",
