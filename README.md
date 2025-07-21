@@ -26,7 +26,7 @@ Summon your Gotchipus using a Lighthouse NFT, stake stablecoins to awaken its so
 - **Hooks Engine** – Custom on-chain action logic (inspired by Uniswap V4)
 - **dNFT Metadata** – Dynamic soul-linked stats and wearables
 - **Task Market** – Delegate routine actions to earn rewards
-- **$PUS Token** – (Coming Soon) Utility and reward token
+- **$GOTCHI Token** – (Coming Soon) Utility and reward token
 - **Pocket Pet Console** – (In Progress) Physical + digital companion
 
 ---
@@ -36,14 +36,14 @@ Summon your Gotchipus using a Lighthouse NFT, stake stablecoins to awaken its so
 
 This is a pre-release documentation.  
 All mechanics are subject to change before mainnet deployment.  
-The $PUS token is **not live**, and no sales are active.
+The $GOTCHI token is **not live**, and no sales are active.
 
 ---
 
 ## 🌐 Stay Connected
 
 - Twitter: [@Gotchipus](https://x.com/gotchipus)
-- Community Discord: [-]
+- Community Discord: [@Channels] [https://discord.gg/gotchilabs]
 
 ---
 

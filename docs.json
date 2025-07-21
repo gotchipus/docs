@@ -1,68 +1,68 @@
 {
-    "$schema": "https://mintlify.com/docs.json",
-    "theme": "maple",
-    "name": "Gotchipus",
-    "colors": {
-      "primary": "#16A34A",
-      "light": "#07C983",
-      "dark": "#15803D"
-    },
-    "favicon": "/favicon.svg",
-    "navigation": {
-        "groups": [
-            {
-              "group": "Welcome to gotchipus",
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "maple",
+  "name": "Gotchipus",
+  "colors": {
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+      "groups": [
+          {
+            "group": "Welcome to gotchipus",
+            "pages": [
+              "welcome/background",
+              "welcome/introduction",
+              "welcome/protocol",
+              "welcome/pocket-pet"
+            ]
+          },
+          {
+            "group": "How it works",
+            "pages": [
+              "works/overview",
+              "works/ai-in-gotchipus",
+              "works/hooks",
+              "works/wearables",
+              "works/task-market"
+            ]
+          },
+          {
+              "group": "Gameplay",
               "pages": [
-                "welcome/background",
-                "welcome/introduction",
-                "welcome/protocol",
-                "welcome/pocket-pet"
+                  "gameplay/outpost",
+                  "gameplay/pharos",
+                  "gameplay/traits",
+                  "gameplay/wearables",
+                  "gameplay/marketplace"
               ]
-            },
-            {
-              "group": "How it works",
+          },
+          {
+              "group": "Tokens",
               "pages": [
-                "works/overview",
-                "works/ai-in-gotchipus",
-                "works/hooks",
-                "works/wearables",
-                "works/task-market"
+                  "tokens/pharosnft",
+                  "tokens/gotchi"
               ]
-            },
-            {
-                "group": "Gameplay",
-                "pages": [
-                    "gameplay/outpost",
-                    "gameplay/pharos",
-                    "gameplay/traits",
-                    "gameplay/wearables",
-                    "gameplay/marketplace"
-                ]
-            },
-            {
-                "group": "Tokens",
-                "pages": [
-                    "tokens/pharosnft",
-                    "tokens/gotchi"
-                ]
-            },
-            {
-                "group": "Developer",
-                "pages": [
-                    "developer/smart-contracts"
-                ]
-            }
-        ]
-    },
-    "logo": {
-      "light": "/images/icon.png",
-      "dark": "/images/icon.png"
-    },
-    "footer": {
-      "socials": {
-        "x": "https://x.com/gotchipus",
-        "github": "https://github.com/gotchipus",
-        "discord": "https://discord.gg/wXcWREfnjT"
-      }
+          },
+          {
+              "group": "Developer",
+              "pages": [
+                  "developer/smart-contracts"
+              ]
+          }
+      ]
+  },
+  "logo": {
+    "light": "/images/icon.png",
+    "dark": "/images/icon.png"
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/gotchipus",
+      "github": "https://github.com/gotchipus",
+      "discord": "https://discord.gg/gotchilabs"
     }
   }
+}
