@@ -1,9 +1,7 @@
 ---
-title: Gameplay Overview
+title: Overview
 description: "Strategic Depth Meets Web3 Innovation"
 ---
-
-# Gameplay Overview
 
 Gotchipus combines the strategic depth of classic base-building games with cutting-edge Web3 technology, creating a unique ecosystem where your NFT isn't just a collectible—it's your strategic commander in an ever-evolving underwater realm.
 
@@ -30,11 +28,61 @@ Gotchipus combines the strategic depth of classic base-building games with cutti
 ## ⚡ Current Gameplay Features
 
 ### 🔮 **Summoning System**
-Your journey begins with the mystical summoning ritual. Stake stablecoins to awaken your Gotchipus from its dormant Pharos state:
+Your journey begins with the mystical summoning ritual. Stake coins to awaken your Gotchipus from its dormant Pharos state.
 
-- **Basic Summoning** (50-200 USDC): Standard faction distribution, base attribute ranges
-- **Enhanced Summoning** (200-500 USDC): Improved rarity chances, higher starting stats
-- **Premium Summoning** (500+ USDC): Guaranteed rare attributes, mixed-faction possibility
+#### Rarity Distribution & Token Bonuses
+
+The summoning process follows a mathematically balanced rarity system designed to reward both casual players and dedicated collectors:
+
+**Base Rarity Rates:**
+```
+Common:     60% chance
+Rare:       25% chance  
+Epic:       12% chance
+Legendary:   3% chance
+```
+
+**Staked Coin Bonus System:**
+For players staking significant amounts of coins for summoning, legendary chances receive progressive bonuses:
+
+```
+Legendary_Bonus = min(5%, floor(coins_staked / 500) × 1%)
+Final_Legendary_Rate = Base_Rate + Legendary_Bonus
+```
+
+**Example Calculations:**
+- 500 coins staked: 3% + 1% = 4% legendary chance
+- 1,000 coins staked: 3% + 2% = 5% legendary chance  
+- 2,500+ coins staked: 3% + 5% = 8% legendary chance (maximum)
+
+This bonus system caps at 5% additional chance, ensuring that while high-stake summoners receive meaningful advantages, the summoning process remains fair and accessible to all players.
+
+#### Pity System (Guaranteed Drops)
+
+To ensure all players eventually obtain higher-tier Gotchipus, a progressive pity system guarantees rare drops after specific intervals:
+
+**Pity Counter Mechanics:**
+```
+Rare Pity:      Guaranteed after 15 consecutive non-rare summons
+Epic Pity:      Guaranteed after 30 consecutive non-epic summons  
+Legendary Pity: Guaranteed after 60 consecutive non-legendary summons
+```
+
+**Pity System Logic:**
+```
+if (summons_since_rare >= 15) {
+    guaranteed_rare = true;
+    minimum_rarity = RARE;
+}
+if (summons_since_epic >= 30) {
+    guaranteed_epic = true;  
+    minimum_rarity = EPIC;
+}
+if (summons_since_legendary >= 60) {
+    guaranteed_legendary = true;
+    minimum_rarity = LEGENDARY;
+}
+```
 
 ### 📈 **Progressive Advancement**
 Watch your Gotchipus grow stronger through a sophisticated leveling system:
@@ -52,11 +100,13 @@ Watch your Gotchipus grow stronger through a sophisticated leveling system:
 - Evolution stage progress
 
 ### 🎯 **Faction Specialization**
-Develop mastery in your chosen faction through focused gameplay:
+Develop mastery in your chosen faction through focused gameplay. Each faction offers unique strategic advantages:
 
-**Combat Mastery**: Aggressive actions, quick decisions, battle-focused interactions
-**Defense Mastery**: Protective choices, endurance challenges, guardian behavior  
-**Technology Mastery**: Innovation activities, resource optimization, strategic planning
+- **⚔️ Combat**: Aggressive tactics, high damage output
+- **🛡️ Defense**: Protective strategies, high durability  
+- **🔧 Technology**: Innovation focus, resource optimization
+
+*For detailed faction mechanics and attribute bonuses, see [Faction System](./traits)*
 
 ### 🧬 **Evolution Stages**
 Progress through 10 distinct evolution stages, each bringing:
@@ -64,6 +114,8 @@ Progress through 10 distinct evolution stages, each bringing:
 - Improved base statistics (up to 3x multipliers)
 - New signature abilities and unique mechanics
 - Prestige bonuses for advanced gameplay
+
+*For mathematical progression formulas, see [Attributes Systems](./attributes)*
 
 ## 🚀 Upcoming Features
 

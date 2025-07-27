@@ -1,0 +1,89 @@
+---
+title: Attribute
+description: "Understanding the mathematical mechanics behind Gotchipus progression"
+---
+
+The Gotchipus ecosystem employs a sophisticated numerical framework designed to provide balanced progression while maintaining strategic depth. This document explains the core mathematical mechanics that govern attribute growth, faction bonuses, and evolution systems.
+
+## 📊 Core Attribute Framework
+
+### Six Primary Attributes
+
+Each Gotchipus possesses six fundamental attributes that determine their capabilities across various gameplay scenarios. These attributes form the foundation of all strategic decisions and combat calculations:
+
+- **Strength (STR)**: Governs physical attack power and construction efficiency
+- **Defense (DEF)**: Controls damage reduction and structural durability  
+- **Mind (INT)**: Influences magical abilities and research speed
+- **Vitality (VIT)**: Determines health points and recovery rates
+- **Agility (AGI)**: Affects action speed and evasion capabilities
+- **Luck (LUK)**: Impacts critical hit rates and resource acquisition
+
+### Initial Attribute Calculation
+
+Base attribute values are determined by the Gotchipus rarity tier, following this mathematical relationship:
+
+```
+Base_Attribute = 12 + (rarity_level × 3) + special_bonus
+```
+
+Where:
+- Common (rarity 0): 12 points
+- Rare (rarity 1): 15 points  
+- Epic (rarity 2): 18 points
+- Legendary (rarity 3): 22 points
+
+The special bonus adds 1 additional point for Legendary tier Gotchipus, representing their exceptional nature.
+
+## 📈 Experience & Leveling Mathematics
+
+### Smooth Growth Curve
+
+The experience system uses a continuous mathematical function to ensure smooth progression without artificial barriers. This prevents the common issue of level "walls" that can frustrate players:
+
+```
+XP_Required = round((OFFSET + STEP × Level) ^ POWER)
+```
+
+**Standard Parameters:**
+- OFFSET = 50 (base experience requirement)
+- STEP = 25 (linear growth factor)  
+- POWER = 1.5 (exponential scaling)
+
+**Example Calculations:**
+- Level 1: (50 + 25×1)^1.5 = 650 XP
+- Level 10: (50 + 25×10)^1.5 = 5,196 XP
+- Level 50: (50 + 25×50)^1.5 = 46,852 XP
+
+This formula ensures that early levels are achievable while higher levels require substantial commitment, maintaining long-term engagement.
+
+### Attribute Point Distribution
+
+The attribute point allocation system balances rapid early growth with sustained long-term progression. Points are awarded based on level ranges with diminishing returns:
+
+**Base Point Formula:**
+```
+Points_Per_Level = {
+    3 if level ≤ 20
+    2 if 21 ≤ level ≤ 50  
+    1 if 51 ≤ level ≤ 100
+    0.5 if level > 100 (every 2 levels)
+}
+```
+
+**Rarity Bonus System:**
+Every 10 levels, additional points are granted based on rarity:
+
+```
+Rarity_Bonus = floor(level / 10) × rarity_multiplier
+```
+
+Where rarity_multiplier equals the rarity level (0 for Common, 1 for Rare, 2 for Epic, 3 for Legendary).
+
+**Milestone Rewards:**
+Significant level achievements provide bonus attribute points:
+
+```
+Milestone_Bonus = floor(level / 25) × 5 + floor(level / 50) × 10 + floor(level / 100) × 20
+```
+
+This creates excitement around major level milestones while providing substantial rewards for dedicated players.

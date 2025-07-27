@@ -32,9 +32,11 @@
           {
               "group": "Gameplay",
               "pages": [
+                  "gameplay/overview",
                   "gameplay/outpost",
                   "gameplay/pharos",
                   "gameplay/traits",
+                  "gameplay/attributes",
                   "gameplay/wearables",
                   "gameplay/marketplace"
               ]
